@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -10,6 +12,8 @@
  
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+source ../../../pyslic/bin/activate
  
 wget -nc http://murphylab.web.cmu.edu/data/cho/giantin.tgz
 wget -nc http://murphylab.web.cmu.edu/data/cho/hoechst.tgz 
@@ -24,3 +28,7 @@ do
 done
 
 find . -name ".DS_Store" -exec rm -fv {} \;
+
+python calculate_features.py
+
+deactivate
