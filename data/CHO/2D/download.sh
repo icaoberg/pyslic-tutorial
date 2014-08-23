@@ -11,12 +11,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
-#uses python global packages if found
-
-cd data
 wget -nc http://murphylab.web.cmu.edu/data/cho/giantin.tgz
-wget -nc http://murphylab.web.cmu.edu/data/cho/hoechst.tgz
-wget -nc http://murphylab.web.cmu.edu/data/cho/lamp2.tgz
+wget -nc http://murphylab.web.cmu.edu/data/cho/hoechst.tgz 
+wget -nc http://murphylab.web.cmu.edu/data/cho/lamp2.tgz 
+wget -nc http://murphylab.web.cmu.edu/data/cho/nop4.tgz
+wget -nc http://murphylab.web.cmu.edu/data/cho/tubulin.tgz
 
 for FILE in *.tgz
 do
