@@ -1,0 +1,47 @@
+README
+------
+Fluorescence microscope images of CHO cells using five 
+different labels (anti-giantin, Hoechst 33258 (DNA), 
+anti-lamp2, anti-nop4, anti-tubulin).
+
+These images were used in our image classification and 
+typical image selection projects, and have been referenced 
+in the following publications:
+
+M. V. Boland, M. K. Markey and R. F. Murphy (1998) Automated 
+Recognition of Patterns Characteristic of Subcellular 
+Structures in Fluorescence Microscopy Images. Cytometry 33: 
+366-375.
+
+M. K. Markey, M. V. Boland and R. F. Murphy (1999). Towards 
+Objective Selection of Representative Microscope Images. 
+Biophys. J. 76:2230-2237.
+
+License Agreement
+-----------------
+
+All data downloaded from the Murphy Lab web site 
+(http://murphylab.web.cmu.edu) remain the property of the 
+Murphy Lab. You are granted a non-exclusive license to use 
+these images for non-commercial, research purposes, with the 
+following conditions: (a) you agree to include a reference 
+to
+
+M. V. Boland, M. K. Markey and R. F. Murphy (1998) Automated 
+Recognition of Patterns Characteristic of Subcellular 
+Structures in Fluorescence Microscopy Images. Cytometry 33: 
+366-375.
+
+when presenting or publishing your results, (b) you agree to 
+send a copy of any paper or abstract (upon its acceptance 
+for publication or presentation) by FAX, email or regular 
+mail to Dr. Murphy, and (c) you agree not to distribute 
+these images without inclusion of this notice.
+
+Dr. Robert F. Murphy
+Professor of Biological Sciences, Biomedical Engineering and 
+Machine Learning
+Carnegie Mellon University
+4400 Fifth Ave., Pittsburgh, PA 15213
+FAX: 412-268-6571
+email: murphy@cmu.edu
