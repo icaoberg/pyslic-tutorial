@@ -22,3 +22,5 @@ do
 	tar -xvf "$FILE"
 	rm -f "$FILE"
 done
+
+find . -name ".DS_Store" -exec rm -fv {} \;
