@@ -33,6 +33,7 @@ done
 find . -name ".DS_Store" -exec rm -fv {} \;
 
 python calculate_features.py
+find . -name "*.pkl"
 
 if [ -f ../../../pyslic/bin/activate ];
 then
