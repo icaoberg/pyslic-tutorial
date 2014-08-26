@@ -30,6 +30,12 @@ before_install:
     - sudo apt-get install -qq libpng12-dev libtiff4-dev libwebp-dev
     - sudo apt-get install -qq python-scipy python-imaging python-matplotlib
     - pip install -U numpy
+    - pip install scipy
+    - pip install milk
+    - pip install pymorph
+    - pip install pandas
+    - pip install mahotas
+    - pip install pyslic
 
 script:
     - cd data/CHO/2D/
