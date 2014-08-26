@@ -15,27 +15,35 @@
 
 if [ -f ../../../pyslic/bin/activate ];
 then
+	echo "Activating virtual environment"
 	source ../../../pyslic/bin/activate
 fi
  
+echo "Downloading tarballs from Murphy Lab website"
 wget -nc http://murphylab.web.cmu.edu/data/cho/giantin.tgz
 wget -nc http://murphylab.web.cmu.edu/data/cho/hoechst.tgz 
 wget -nc http://murphylab.web.cmu.edu/data/cho/lamp2.tgz 
 wget -nc http://murphylab.web.cmu.edu/data/cho/nop4.tgz
 wget -nc http://murphylab.web.cmu.edu/data/cho/tubulin.tgz
 
+echo "Extracting tarballs"
 for FILE in *.tgz
 do
 	tar -xf "$FILE"
 	rm -f "$FILE"
 done
 
+echo "Delete unnecessary files from extracted tarball"
 find . -name ".DS_Store" -exec rm -fv {} \;
 
+echo "Calculate SLF33 feature set on downloaded images"
 python calculate_features.py
+
+echo "Lets try to find the pickle files containing the feature vectors"
 find . -name "*.pkl"
 
 if [ -f ../../../pyslic/bin/activate ];
 then
+	echo "Deactivating virtual environment"
 	deactivate
 fi
