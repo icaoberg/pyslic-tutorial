@@ -26,7 +26,7 @@ wget -nc http://murphylab.web.cmu.edu/data/cho/tubulin.tgz
 
 for FILE in *.tgz
 do
-	tar -xvf "$FILE"
+	tar -xf "$FILE"
 	rm -f "$FILE"
 done
 

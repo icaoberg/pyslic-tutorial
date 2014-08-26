@@ -39,14 +39,14 @@ for directory in directories:
 					pixels = numpy.array(pixels)
 				
 					#make pyslic image container
-    				img=pyslic.Image()
-    				img.label=basename
-    				img.scale=0.237
+    					img=pyslic.Image()
+    					img.label=basename
+    					img.scale=0.237
 
-    				img.channels[ 'protein' ] = 0
+    					img.channels[ 'protein' ] = 0
 					img.channeldata[ 'protein' ] = pixels
 
-        			img.loaded=True
+        				img.loaded=True
 					features = pyslic.computefeatures(img,'field+')
 					image = {}
 					image['pixels']=pixels
