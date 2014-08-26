@@ -13,7 +13,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-source ../../../pyslic/bin/activate
+if [ -f ../../../pyslic/bin/activate ];
+then
+	source ../../../pyslic/bin/activate
+fi
  
 wget -nc http://murphylab.web.cmu.edu/data/cho/giantin.tgz
 wget -nc http://murphylab.web.cmu.edu/data/cho/hoechst.tgz 
@@ -31,4 +34,7 @@ find . -name ".DS_Store" -exec rm -fv {} \;
 
 python calculate_features.py
 
-deactivate
+if [ -f ../../../pyslic/bin/activate ];
+then
+	deactivate
+fi
